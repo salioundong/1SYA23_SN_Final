@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DndTool_Tests
-build_property.ProjectDir = C:\Users\camoe\OneDrive - Cégep de Shawinigan\23A\1SY\Eval\TP5_Final\Enonce\DndTool_Tests\
+build_property.ProjectDir = C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool_Tests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
