@@ -113,13 +113,35 @@ namespace DndTool.Factory
 
         public void ExecuteCommand(String command, String[] inputs)
         {
-            // Étape 2 : A complété
+            switch (command)
+            {
+                case "help":
+                    this.GetCommands(); 
+                    break;
+                case "vLang":
+                    this.GetLanguages();
+                    break;
+                case "vSkills":
+                    this.GetSkills();
+                    break;
+                case "vVision":
+                    this.GetVisions();
+                    break;
+                case "switch":
+                    //this.SwitchLanguage(inputs[1]);
+                    break;
+                default:
+                    break;
+               
+            }
         }
 
         public String RequestCommand(String input)
         {
-            // Étape 2 : A complété
-            return "";
+            String[] inputs = input.Split(' ');
+            String command = inputs[0];
+            this.ExecuteCommand(command, inputs);
+            return command;
         }
     }
 }

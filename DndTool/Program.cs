@@ -10,4 +10,5 @@ while (command != "exit")
 {
     String input = Console.ReadLine();
     command = gFactory.RequestCommand(input);
+
 }

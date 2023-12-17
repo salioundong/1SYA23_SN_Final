@@ -26,3 +26,18 @@ C:\Users\camoe\OneDrive - Cégep de Shawinigan\23A\1SY\Eval\TP5_Final\Enonce\Dnd
 C:\Users\camoe\OneDrive - Cégep de Shawinigan\23A\1SY\Eval\TP5_Final\Enonce\DndTool\obj\Debug\net6.0\DndTool.pdb
 C:\Users\camoe\OneDrive - Cégep de Shawinigan\23A\1SY\Eval\TP5_Final\Enonce\DndTool\obj\Debug\net6.0\DndTool.genruntimeconfig.cache
 C:\Users\camoe\OneDrive - Cégep de Shawinigan\23A\1SY\Eval\TP5_Final\Enonce\DndTool\obj\Debug\net6.0\ref\DndTool.dll
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\bin\Debug\net6.0\DndTool.exe
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\bin\Debug\net6.0\DndTool.deps.json
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\bin\Debug\net6.0\DndTool.runtimeconfig.json
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\bin\Debug\net6.0\DndTool.dll
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\bin\Debug\net6.0\DndTool.pdb
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.AssemblyInfoInputs.cache
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.AssemblyInfo.cs
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.csproj.CoreCompileInputs.cache
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.sourcelink.json
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.dll
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\refint\DndTool.dll
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.pdb
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\DndTool.genruntimeconfig.cache
+C:\Users\salio\Desktop\S5\Analyse Objet\1SYA23_SN_Final\DndTool\obj\Debug\net6.0\ref\DndTool.dll
