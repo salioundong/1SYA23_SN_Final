@@ -11,6 +11,14 @@ namespace DndTool.Factory
     {
         // Ce factory sert aux fonctions générales du programme
 
+        private Translator translator;
+        private string currentLanguage;
+
+        public GFactory()
+        {
+            translator = new Translator();
+        }
+
         public List<Language> InitializeLanguages()
         { 
             List<Language> list = new List<Language>();
@@ -79,13 +87,13 @@ namespace DndTool.Factory
 
         public void GetCommands()
         {
-            // Imprime toutes les commandes et explications nécessaire pour utiliser l'application
-            Console.WriteLine("help : obtenir le guide des commandes du systèmes");
-            Console.WriteLine("vLang : Obtenir la liste des langages ");
-            Console.WriteLine("vSkills : Obtenir la liste des skills");
-            Console.WriteLine("vVision : Obtenir la liste des visions possibles");
-            Console.WriteLine("switch XX : Permet de changer la langue du logiciel (Remplacer XX pour EN ou FR selon la langue désirée");
+            Console.WriteLine(translator.Translate("help", currentLanguage) + " : " + translator.Translate("Obtenir le guide des commandes du système", currentLanguage));
+            Console.WriteLine(translator.Translate("vLang", currentLanguage) + " : " + translator.Translate("Obtenir la liste des langages", currentLanguage));
+            Console.WriteLine(translator.Translate("vSkills", currentLanguage) + " : " + translator.Translate("Obtenir la liste des skills", currentLanguage));
+            Console.WriteLine(translator.Translate("vVision", currentLanguage) + " : " + translator.Translate("Obtenir la liste des visions possibles", currentLanguage));
+            Console.WriteLine(translator.Translate("switch XX", currentLanguage) + " : " + translator.Translate("Permet de changer la langue du logiciel (Remplacer XX pour EN ou FR selon la langue désirée", currentLanguage));
         }
+
 
         public List<Language> GetLanguages()
         {
@@ -128,7 +136,7 @@ namespace DndTool.Factory
                     this.GetVisions();
                     break;
                 case "switch":
-                    //this.SwitchLanguage(inputs[1]);
+                     this.SwitchLanguage(inputs[1]);
                     break;
                 default:
                     break;
@@ -143,5 +151,13 @@ namespace DndTool.Factory
             this.ExecuteCommand(command, inputs);
             return command;
         }
+
+        public void SwitchLanguage(string language)
+        {
+            currentLanguage = language;
+            Console.WriteLine("Switching language to: " + currentLanguage);
+        }
+
+
     }
 }

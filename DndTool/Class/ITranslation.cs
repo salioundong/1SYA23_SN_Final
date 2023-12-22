@@ -8,6 +8,6 @@ namespace DndTool.Class
 {
     public interface ITranslation
     {
-
+        string Translate(string key, string language);
     }
 }
