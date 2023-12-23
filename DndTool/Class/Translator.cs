@@ -46,7 +46,7 @@ namespace DndTool.Class
             });
         }
 
-        private void AddTranslations(string category, Dictionary<string, string> translationsForCategory)
+        public void AddTranslations(string category, Dictionary<string, string> translationsForCategory)
         {
             translations.Add(category, translationsForCategory);
         }

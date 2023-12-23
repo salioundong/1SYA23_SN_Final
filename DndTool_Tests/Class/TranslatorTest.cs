@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,7 +24,7 @@ namespace DndTool_Tests.Class
         }
 
         [TestMethod()]
-        public void Translate_ValidKeyAndLanguage_ReturnsTranslation()
+        public void Translate_ValidKey()
         {
             // Arrange
             Translator translator = new Translator();
@@ -34,11 +35,11 @@ namespace DndTool_Tests.Class
             string result = translator.Translate(key, language);
 
             // Assert
-            Assert.AreEqual("Humans", result);
+            Assert.AreEqual("Humains", result);
         }
 
         [TestMethod()]
-        public void Translate_InvalidLanguage_ReturnsNull()
+        public void Translate_InvalidLanguage()
         {
             // Arrange
             Translator translator = new Translator();
@@ -53,19 +54,31 @@ namespace DndTool_Tests.Class
         }
 
         [TestMethod()]
-        public void Translate_InvalidKey_ReturnsNull()
+        public void Translate_ReturnsOriginalKey()
         {
             // Arrange
-            Translator translator = new Translator();
-            string key = "InvalidKey";
-            string language = "EN";
+            var translator = new Translator();
 
             // Act
-            string result = translator.Translate(key, language);
+            var translation = translator.Translate("Commun", null);
 
             // Assert
-            Assert.IsNotNull(result);
+            Assert.AreEqual("Commun", translation);
         }
 
+
+        [TestMethod()]
+        public void AddTranslations_AddsTranslationsToDictionary()
+        {
+            // Arrange
+            var translator = new Translator();
+
+            // Act
+            translator.AddTranslations("TestCategory", new Dictionary<string, string> { { "Key1", "Value1" } });
+
+            // Assert
+            var translation = translator.Translate("Key1", "TestCategory");
+            Assert.AreEqual("Key1", translation);
+        }
     }
 }

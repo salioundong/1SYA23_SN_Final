@@ -49,9 +49,10 @@
 | Test | Niveau | Description |
 | ---- | ------ | ----------- |
 | Translate_Loaded | Unitaire | Initialisation - pas d'erreur |
-|  | Unitaire | Initialisation - valeurs vides - pas d'erreur |
-|  | Unitaire | Getters - vide doit fonctionner |
-|  | Unitaire | Getters - fonctionnement normal |
+| Translate_ValidKey | Unitaire | retourne résultat attendu |
+| Translate_InvalidLanguage | Unitaire | langue invalide mais résutat non null |
+| Translate_ReturnsOriginalKey | Unitaire |  langue nulle mais key valide |
+| AddTranslations_AddsTranslationsToDictionary | Unitaire | Ajouter clé au dictionnaire  |
 
 ## Vision
 | Test | Niveau | Description |
