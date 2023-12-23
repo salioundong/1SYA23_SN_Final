@@ -45,6 +45,14 @@
 | T_ClassSkillBonus_GetName_NameOutput | Unitaire | Getters - fonctionnement normal |
 | T_ClassSkillBonus_GetBonus_Output | Unitaire | Getters - fonctionnement normal |
 
+## Translator
+| Test | Niveau | Description |
+| ---- | ------ | ----------- |
+| Translate_Loaded | Unitaire | Initialisation - pas d'erreur |
+|  | Unitaire | Initialisation - valeurs vides - pas d'erreur |
+|  | Unitaire | Getters - vide doit fonctionner |
+|  | Unitaire | Getters - fonctionnement normal |
+
 ## Vision
 | Test | Niveau | Description |
 | ---- | ------ | ----------- |
@@ -52,6 +60,7 @@
 | T_Class_VisionInit_EmptyInit | Unitaire | Initialisation - valeurs vides - pas d'erreur |
 | T_ClassVision_GetName_EmptyName | Unitaire | Getters - vide doit fonctionner |
 | T_ClassVision_GetName_NameOutput | Unitaire | Getters - fonctionnement normal |
+
 
 # Factory
 ## GFactory
