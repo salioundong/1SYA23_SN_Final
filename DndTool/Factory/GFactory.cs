@@ -87,13 +87,12 @@ namespace DndTool.Factory
 
         public void GetCommands()
         {
-            Console.WriteLine(translator.Translate("help", currentLanguage) + " : " + translator.Translate("Obtenir le guide des commandes du système", currentLanguage));
-            Console.WriteLine(translator.Translate("vLang", currentLanguage) + " : " + translator.Translate("Obtenir la liste des langages", currentLanguage));
-            Console.WriteLine(translator.Translate("vSkills", currentLanguage) + " : " + translator.Translate("Obtenir la liste des skills", currentLanguage));
-            Console.WriteLine(translator.Translate("vVision", currentLanguage) + " : " + translator.Translate("Obtenir la liste des visions possibles", currentLanguage));
-            Console.WriteLine(translator.Translate("switch XX", currentLanguage) + " : " + translator.Translate("Permet de changer la langue du logiciel (Remplacer XX pour EN ou FR selon la langue désirée", currentLanguage));
+            Console.WriteLine(translator.Translate("help", currentLanguage) + " : Obtenir le guide des commandes du système");
+            Console.WriteLine(translator.Translate("vLang", currentLanguage) + " : Obtenir la liste des langages ");
+            Console.WriteLine(translator.Translate("vSkills", currentLanguage) + " : Obtenir la liste des skills");
+            Console.WriteLine(translator.Translate("vVision", currentLanguage) + " : Obtenir la liste des visions possibles");
+            Console.WriteLine(translator.Translate("switch XX", currentLanguage) + " : Permet de changer la langue du logiciel (Remplacer XX pour EN ou FR selon la langue désirée");
         }
-
 
         public List<Language> GetLanguages()
         {
@@ -152,7 +151,7 @@ namespace DndTool.Factory
             return command;
         }
 
-        public void SwitchLanguage(string language)
+        public void SwitchLanguage(String language)
         {
             currentLanguage = language;
             Console.WriteLine("Switching language to: " + currentLanguage);
