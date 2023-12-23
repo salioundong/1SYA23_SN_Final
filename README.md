@@ -23,3 +23,17 @@ Utilitaire d'informations de base pour donjon et dragon (partiel).
 - vLang = view Languages
 - vSkills = view Skils
 - vVision = view Vision
+
+# Autres patrons de conception
+
+## Le Command
+
+- **Encapsulation des Opérations :** Le modèle de Commande encapsule chaque opération spécifique sur les listes dans une classe de commande distincte. Chaque commande est responsable de sa propre logique.
+
+- **Séparation des Responsabilités :** La séparation des responsabilités entre les commandes améliore la maintenabilité du code. Les modifications ou les ajouts de fonctionnalités se font de manière isolée.
+
+## La Façade
+
+- **Interface Unifiée pour le Sous-Système :** Ce modèle de conception fournit une interface unifiée à un sous-système. Ainsi, il définit une interface de plus haut niveau qui facilite l'utilisation du sous-système.
+
+- **Produit Simplifié :** La Façade fournit un produit simplifié avec un grand sous-système de classes mesurant la solvabilité d'un demandeur.
